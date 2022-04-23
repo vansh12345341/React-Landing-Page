@@ -79,6 +79,7 @@
     right: 0rem;
     bottom: 0rem;
     flex-direction: column;
+    gap: 3.8rem;
   }
   .hero__video_contener {
     max-width: 90%;

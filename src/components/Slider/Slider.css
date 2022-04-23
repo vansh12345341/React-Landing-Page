@@ -40,11 +40,12 @@
   flex-shrink: 0;
   border-radius: 15px;
   background-color: white;
+  position: relative;
 }
 
 .slider__item_contener {
-  animation: transition 16s linear reverse infinite;
-  transform: translate(400px);
+  animation: transition 17s linear reverse infinite;
+  transform: translate(1200px);
 }
 .slider__item_contener-lower {
   animation: transition 17s linear infinite;
@@ -57,6 +58,8 @@
 
 .sliderItem__img {
   width: 100%;
+  position: absolute;
+  bottom: 70px;
 }
 
 .sliderItem__info_div {

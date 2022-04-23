@@ -1,0 +1,45 @@
+.ourTeam__section {
+  position: relative;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+body * {
+}
+.ourTeam__div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  gap: 4rem;
+}
+
+.div__title {
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  margin-bottom: 2rem;
+  transform: translate(-50%);
+}
+
+.div__title h4 {
+  color: var(--color-black);
+  font-size: clamp(25px, 10vw, 60px);
+  border-bottom: 4px solid;
+}
+
+@media (max-width: 700px) {
+  .ourTeam__section {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+  }
+
+  .ourTeam__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

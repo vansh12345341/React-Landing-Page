@@ -1,0 +1,68 @@
+.caroulse {
+  width: 90%;
+  max-width: 400px;
+  height: 480px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+}
+.caroulse__slider {
+  height: 100%;
+  --translate-value: 0;
+  display: flex;
+  transition: 0.4s ease;
+  transform: var(--translate-value);
+}
+
+.slider__img_div {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  height: 100%;
+  background-color: rgb(253, 249, 235);
+  flex-shrink: 0;
+}
+
+.slider__img {
+  width: 100%;
+  position: relative;
+  top: -3rem;
+}
+
+.arrows__div {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+.carousle__arrow_reversed {
+  transform: rotate(180deg);
+}
+
+.carousle__arrow_reversed,
+.carousle__arrow {
+  width: 40px;
+}
+
+.caroulse__bottom_section {
+  position: absolute;
+  width: fit-content;
+  z-index: 10;
+  left: 50%;
+  bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  transform: translate(-50%);
+}
+@media (max-width: 450px) {
+  .caroulse {
+    height: 430px;
+  }
+}

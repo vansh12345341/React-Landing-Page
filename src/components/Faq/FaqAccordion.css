@@ -1,0 +1,33 @@
+.faq__accordion {
+  padding: 0.3rem;
+}
+.faq__accordion_span {
+  border-bottom: 3px solid white;
+  padding-bottom: 1rem;
+  transition: 0.4s all;
+  height: var(--height);
+  overflow: hidden;
+}
+.faq__accordion_span p {
+  margin-top: 1rem;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.faq__accordion_title {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.disactive::after {
+  content: "\002B";
+  position: absolute;
+  right: 2%;
+  font-size: 25px;
+}
+.active::before {
+  content: "\002D";
+  position: absolute;
+  right: 2%;
+  font-size: 25px;
+}

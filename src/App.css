@@ -1,0 +1,29 @@
+.section__padding {
+  padding: 2rem 6rem;
+}
+
+.flex {
+  display: flex;
+}
+canvas {
+  inset: auto;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.flex__spaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1017px) {
+  .section__padding {
+    padding: 2rem;
+  }
+}

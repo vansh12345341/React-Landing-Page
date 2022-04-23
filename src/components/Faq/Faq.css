@@ -1,0 +1,36 @@
+.faq__section {
+  background-color: var(--color-black);
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faq__contener {
+  max-width: 1200px;
+  margin-inline: auto;
+  position: relative;
+}
+.faq__title {
+  font-size: clamp(25px, 10vw, 60px);
+  color: white;
+
+  border-bottom: 3px solid white;
+  position: relative;
+  width: fit-content;
+  margin-bottom: 8rem;
+
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.faq__accordions_contener {
+  display: grid;
+  gap: 3rem;
+  position: relative;
+  bottom: 3rem;
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}

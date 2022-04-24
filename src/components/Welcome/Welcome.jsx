@@ -4,7 +4,7 @@ import Carousle from "./Carousle/Carousle";
 import "./Welcome.css";
 const Welcome = () => {
   return (
-    <section className="welcome__section  ">
+    <section id="About" className="welcome__section  ">
       <div className="welcome__contener  section__padding">
         <div className="welcome__text-white">
           <h3>Welcome To The Weirdos Club.</h3>

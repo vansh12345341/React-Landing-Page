@@ -6,7 +6,7 @@ const Slider = () => {
   const upperArray = imgs.slice(5);
   const lowerArray = imgs.slice(0, 5);
   return (
-    <section className="slider__section">
+    <section id="Showcase" className="slider__section">
       <div className="slider__content_contener section__padding">
         <div className="slider__upperPart">
           <div className="slider__item_contener">

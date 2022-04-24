@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/NFT-Collection-Website-Landing-page-with-React-JS/static/css/main.bdcb4f28.css",
+    "main.css": "/NFT-Collection-Website-Landing-page-with-React-JS/static/css/main.3e875a91.css",
     "main.js": "/NFT-Collection-Website-Landing-page-with-React-JS/static/js/main.cbc4bb9e.js",
     "static/media/Home Video.mp4": "/NFT-Collection-Website-Landing-page-with-React-JS/static/media/Home Video.d4bf2265b2f4a01a1582.mp4",
     "index.html": "/NFT-Collection-Website-Landing-page-with-React-JS/index.html",
-    "main.bdcb4f28.css.map": "/NFT-Collection-Website-Landing-page-with-React-JS/static/css/main.bdcb4f28.css.map",
+    "main.3e875a91.css.map": "/NFT-Collection-Website-Landing-page-with-React-JS/static/css/main.3e875a91.css.map",
     "main.cbc4bb9e.js.map": "/NFT-Collection-Website-Landing-page-with-React-JS/static/js/main.cbc4bb9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdcb4f28.css",
+    "static/css/main.3e875a91.css",
     "static/js/main.cbc4bb9e.js"
   ]
 }

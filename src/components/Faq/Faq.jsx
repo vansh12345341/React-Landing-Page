@@ -4,7 +4,7 @@ import FaqAccordion from "./FaqAccordion";
 import { AccordionsData } from "../../assets/AccordionsData";
 const Faq = () => {
   return (
-    <section className="faq__section section__padding">
+    <section id="Faq" className="faq__section section__padding">
       <div className="faq__contener">
         <div className="faq__title">
           <h3> FAQ </h3>

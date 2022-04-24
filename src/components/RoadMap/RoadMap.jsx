@@ -47,7 +47,11 @@ const RoadMap = () => {
   };
 
   return (
-    <section ref={ref} className="roadmap__section section__padding">
+    <section
+      id="Roadmap"
+      ref={ref}
+      className="roadmap__section section__padding"
+    >
       <div className="roadmap__title">
         <h3>Roadmap</h3>
       </div>

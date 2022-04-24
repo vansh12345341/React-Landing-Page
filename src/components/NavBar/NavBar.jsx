@@ -11,21 +11,29 @@ const NavBar = () => {
 
   // state to set is the menu open or closed
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
+  const [firstRender, setFirstRender] = useState(false);
   useEffect(() => {
     if (isMobileNavOpen) {
       document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflowY = "auto";
+      document.body.style.overflow = "auto";
+    }
+    if (firstRender) {
+      mobileNavDivRef.current.classList.toggle("nav__mobile_icon_close");
+    } else {
+      setFirstRender(true);
     }
   }, [isMobileNavOpen]);
   const NavMobileClickHandler = () => {
     setIsMobileNavOpen((pre) => !pre);
-    mobileNavDivRef.current.classList.toggle("nav__mobile_icon_close");
   };
   return (
     <nav className="nav__nav section__padding flex__spaceBetween">
       {isMobileNavOpen ? (
-        <isMobileNavOpenContext.Provider value={[isMobileNavOpen]}>
+        <isMobileNavOpenContext.Provider
+          value={[isMobileNavOpen, setIsMobileNavOpen, mobileNavDivRef]}
+        >
           <NavBarMobile />
         </isMobileNavOpenContext.Provider>
       ) : (
@@ -44,12 +52,12 @@ const NavBar = () => {
         <span></span>
       </div>
       <div className="nav__links_div">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Roadmap</a>
-        <a href="#">Showcase</a>
-        <a href="#">Team</a>
-        <a href="#">Faq</a>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Roadmap">Roadmap</a>
+        <a href="#Showcase">Showcase</a>
+        <a href="#Team">Team</a>
+        <a href="#Faq">Faq</a>
       </div>
       {window.innerWidth <= 790 ? null : (
         <Button

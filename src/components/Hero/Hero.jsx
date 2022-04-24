@@ -12,7 +12,7 @@ const Hero = () => {
   // to change the text every 20 seconds
 
   return (
-    <section className="hero__section section__padding">
+    <section id="Home" className="hero__section section__padding">
       <div className="hero__div">
         <div className="hero__text">
           <h3>Discover A New Era Of Cool</h3>

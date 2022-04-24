@@ -16,7 +16,7 @@ const OurTeam = () => {
   }, []);
   return (
     <>
-      <section className="section__padding ourTeam__section">
+      <section id="Team" className="section__padding ourTeam__section">
         <div className="div__title">
           <h4>Team</h4>
         </div>
